@@ -1,0 +1,404 @@
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.titillium-web-light {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.titillium-web-regular {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titillium-web-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.titillium-web-bold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.titillium-web-black {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.titillium-web-light-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.titillium-web-regular-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.titillium-web-bold-italic {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    /* Dirección principal horizontal */
+    justify-content: space-between;
+    /* Distribuye los elementos a lo largo del eje principal */
+    align-items: center;
+    /* Centra los elementos en el eje cruzado */
+}
+
+body {
+    margin: 0;
+    background: #141e30;
+    
+}
+
+.h1-portfolio {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #fff;
+    margin: 20px;
+}
+
+footer {
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    color: #c0c0c0;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.span-greetings{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Efectos de "Soy Facundo Pepino" */
+.span-showname {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    display: block;
+}
+
+.span-showname:after {
+    content: "";
+    animation: abomination1 10s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes abomination1 {
+    0% {
+        content: "S";
+    }
+
+    4% {
+        content: "So";
+    }
+
+    8% {
+        content: "Soy";
+    }
+
+    12% {
+        content: "Soy ";
+    }
+
+    16% {
+        content: "Soy F";
+    }
+
+    20% {
+        content: "Soy Fa";
+    }
+
+    24% {
+        content: "Soy Fac";
+    }
+
+    28% {
+        content: "Soy Facu";
+    }
+
+    32% {
+        content: "Soy Facun";
+    }
+
+    36% {
+        content: "Soy Facund";
+    }
+
+    40% {
+        content: "Soy Facundo";
+    }
+
+    44% {
+        content: "Soy Facundo ";
+    }
+
+    48% {
+        content: "Soy Facundo P";
+    }
+
+    52% {
+        content: "Soy Facundo Pe";
+    }
+
+    56% {
+        content: "Soy Facundo Pep";
+    }
+
+    60% {
+        content: "Soy Facundo Pepi";
+    }
+
+    64% {
+        content: "Soy Facundo Pepin";
+    }
+
+    68% {
+        content: "Soy Facundo Pepino";
+    }
+
+    72% {
+        content: "Soy Facundo Pepino";
+    }
+
+    100% {
+        content: "Soy Facundo Pepino_";
+    }
+}
+
+/* Clase del Body que contiene al footer, main y header  */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;/* Forzar a que se ocupe solamente la parte visible de la pantalla */
+}
+/* Se utiliza FLEX para disponer al header, main y footer en columnas */
+
+main {
+    max-height: 100vh - 150px;
+    display: flex;
+    flex-direction: row;
+}
+/* Se utiliza FLEX para disponer a los div centrales que contiene el Main en 1 fila*/
+
+main div:first-child {
+    width: 60%;
+    text-align: center;
+    align-content: center;
+}
+/* El primer div ocupa el 60% del ancho total y alinea el texto al centro*/
+
+main>div:last-child {
+    width: 40%;
+    border-radius: 10px;
+    align-content: center;
+}
+/* El segundo div ocupa el 40% del ancho total y alinea su contenido al centro (verticalmente)*/
+
+img {
+    max-width: 75%;
+    max-height: 75%;
+    height: auto;
+    margin: auto;
+    display: block;/* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
+    border-radius: 10%;
+    object-fit: cover;
+    padding: 10px;
+    background: #fff; /* Fondo blanco */
+    border: 2px solid #c0c0c0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg); /* Un ligero giro para un efecto polaroid */
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); 
+}
+
+/*Redes Sociales*/
+
+.social_media {
+    max-width: 300px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .social_media a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .social_media a:hover {
+    transform: scale(1.2);
+  }
+
+/*Botones*/
+nav{
+    display: flex;
+    flex-direction: column; 
+}
+
+nav a{
+    text-decoration: none;
+    display: flex;  /*  Esto hace que los elementos hijos (en este caso, los botones) se dispongan dentro del <a> usando las propiedades de flexbox. */
+}
+
+button {
+    flex-grow: 1; /*Indica que el botón debe expandirse para ocupar todo el espacio disponible dentro del contenedor flex (el <a>). */
+    
+    border-radius: 5px;
+    margin: 20px;
+    padding: 0 2em;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    header{
+        justify-content: space-between;
+        /* Distribuye los elementos a lo largo del eje principal */
+        align-items: center;
+        /* Centra los elementos en el eje cruzado */
+    }
+
+    
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main div:first-child,
+    main div:last-child {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 180px;
+    }
+
+    
+    main {
+        flex-direction: column;
+        height: auto;
+        gap: 1000px;
+    }
+
+    main div:first-child,
+    main div:last-child {
+        width: 100%;
+    }
+
+}
