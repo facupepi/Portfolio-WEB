@@ -1,0 +1,235 @@
+.span-form:after{
+    content: "";
+    animation: abomination3 3s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.span-form {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    display: block;
+}
+
+.span-form2{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    display: block;
+}
+
+@keyframes abomination3 {
+    0% {
+        content: "F";
+    }
+
+    10% {
+        content: "Fo";
+    }
+
+    20% {
+        content: "For";
+    }
+
+    30% {
+        content: "Form";
+    }
+
+    40% {
+        content: "Formu";
+    }
+
+    50% {
+        content: "Formul";
+    }
+
+    60% {
+        content: "Formula";
+    }
+
+    70% {
+        content: "Formular";
+    }
+
+    80% {
+        content: "Formulari";
+    }
+
+    90% {
+        content: "Formulario";
+    }
+
+    100% {
+        content: "Formulario_";
+    }
+
+
+}
+
+.section_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+	border-radius: 10px;  
+
+    background-color: #1AAB8A; 
+    padding: 10px;
+}
+
+
+textarea{
+    font-family: "Titillium Web", sans-serif; 
+    font-size: 20px;
+    height: 30px;
+    resize: none;
+}
+
+form input{
+    padding: 10px;
+    font-weight: 400px;
+    font-size: 20px;
+    background-color: #fbfbfb; 
+	width: 95%; 
+	height: 30px;
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 3px; 
+	border-color: #c0c0c0;   
+    margin-bottom: 10px; 
+}
+
+form input:focus, form textarea:focus{
+    outline:0;
+    border: 5px solid #c0c0c0;
+}
+
+form label{
+    color: #fff;
+    width: 100px; /* Ancho fijo para los labels */
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+textarea{
+    padding: 10px;
+    width: 95%; 
+    height: 100px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 3px; 
+	border-color: #c0c0c0;   
+    padding-top: 15px; 
+  }
+
+  button{
+    padding: 10px;
+    font-family: "Titillium Web", sans-serif; 
+    font-size: 30px;
+    font-weight: 700;
+	height: 60px;  	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #141e30; 
+    color: #fff;
+	border-radius: 10px;
+    border: none;
+	width: 50%;   
+    cursor: pointer;
+    box-sizing: content-box;
+    transition: 800ms ease all;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+button:before,
+button:after {
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+.div_firstname_surname{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Asegura que cada grupo de campo ocupe el 100% del contenedor */
+}
+
+/* MediaQueries Para Contact*/
+
+@media (max-width: 768px) {
+
+    header{
+        justify-content: space-between;
+        /* Distribuye los elementos a lo largo del eje principal */
+        align-items: center;
+        /* Centra los elementos en el eje cruzado */
+    }
+
+    
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section_first,
+    .section_second {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 180px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .h1-title{
+        width: fit-content;
+    }
+
+    .section_first,
+    .section_second {
+        width: 100%;
+    }
+
+    .div_firstname_surname{
+        gap: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
