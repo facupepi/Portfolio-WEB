@@ -13,16 +13,24 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_contact.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8e61ff2e0c.js" crossorigin="anonymous"></script>
+    
 
-    <title>Proyectos de Facundo Pepino</title>
+    <title>Contacto con Facundo Pepino</title>
 </head>
 
 <body class="container">
 
     <header>
-        <h1 class="h1-portfolio">CONTACTO.</h1>
+        <h1 class="h1-title">CONTACTO.</h1>
+
+        <nav class="other_pages_nav">
+            <a href="aboutme.html" class="fa fa-arrow-left"></a>
+            <a href="index.html" class="fa fa-home"></a>
+        </nav>
+
         <section class="social_media">
             <a target="_blank" aria-label="Mail" href="mailto:facujoel2018@gmail.com" class="fa fa-envelope"></a>
             <a target="_blank" aria-label="Instagram" href="https://www.instagram.com/facuu_pepino/" class="fa fa-instagram"></a>
@@ -31,6 +39,51 @@
     </header>
 
     <main>
+        <section class="section_first">
+            <span class="span-form"></span>
+            <span class="span-form2">Escribime y en breve me pondré en contacto contigo</span>
+            <!---esto se animará para mostrar "Formulario"-->
+
+            <section class="section_form">
+                <form action="https://formspree.io/f/xjkbodvw" method="POST">
+
+                    <div class="div_firstname_surname">
+                        <label for="first_name" >Nombre</label>
+                        <input required type="text" name="first_name" placeholder="Ingrese su nombre..." maxlength="30">
+            
+                        <label for="surn_name" >Apellido</label>
+                        <input required type="text" name="surn_name" placeholder="Ingrese su apellido..." maxlength="30">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="subject" >Asunto</label>
+                        <input required type="text" name="subject" placeholder="Motivo del contacto..." maxlength="30">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="email" >Email</label>
+                        <input required type="email" name="email" placeholder="Ingrese su mail..." maxlength="50">
+                    </div>
+                    
+                    <div class="field-group">
+                        <label for="message" >Mensaje</label>
+                        <textarea required name="message" placeholder="Hola! Me comunico por..." maxlength="300"></textarea>
+                    </div>
+                    
+                    <div class="field-group">
+                        <button type="submit" value="Enviar Formulario">Enviar</button>
+                    </div>
+                    
+                </form>
+            </section>
+           
+        </section>
+
+        <section class="section_second">
+            <img class="img_important" alt="Foto de correo" src="img/correo.png">
+        </section>
+
+        
         
     </main>
 
