@@ -13,7 +13,6 @@ header {
 body {
     margin: 0;
     background: #141e30;
-    
 }
 
 .h1-title {
@@ -42,8 +41,10 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;/* Forzar a que se ocupe solamente la parte visible de la pantalla */
+    max-height: 100vh;
+    /* Forzar a que se ocupe solamente la parte visible de la pantalla */
 }
+
 /* Se utiliza FLEX para disponer al header, main y footer en columnas */
 
 main {
@@ -51,20 +52,23 @@ main {
     display: flex;
     flex-direction: row;
 }
+
 /* Se utiliza FLEX para disponer a los div centrales que contiene el Main en 1 fila*/
 
-.section_first{
+.section_first {
     width: 60%;
     text-align: center;
     align-content: center;
 }
+
 /* El primer div ocupa el 60% del ancho total y alinea el texto al centro*/
 
-.section_second{
+.section_second {
     width: 40%;
     border-radius: 10px;
     align-content: center;
 }
+
 /* El segundo div ocupa el 40% del ancho total y alinea su contenido al centro (verticalmente)*/
 
 /*Redes Sociales*/
@@ -75,9 +79,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .social_media a {
+}
+
+.social_media a {
     text-decoration: none;
     margin: 10px;
     font-size: 28px;
@@ -90,11 +94,11 @@ main {
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
-  }
-  
-  .social_media a:hover {
+}
+
+.social_media a:hover {
     transform: scale(1.2);
-  }
+}
 
 
 /*Navegacion Otras paginas*/
@@ -103,9 +107,9 @@ main {
     max-width: 300px;
     display: flex;
     justify-content: end;
-  }
-  
-  .other_pages_nav a {
+}
+
+.other_pages_nav a {
     text-decoration: none;
     margin: 10px;
     font-size: 28px;
@@ -113,28 +117,151 @@ main {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background:  #1AAB8A;
+    background: #1AAB8A;
     color: #f1f1f1;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
-  }
-  
-  .other_pages_nav a:hover {
-    transform: scale(1.2);
-  }
+}
 
-  .img_important{
+.other_pages_nav a:hover {
+    transform: scale(1.2);
+}
+
+.img_important {
     max-width: 85%;
     max-height: 85%;
     height: auto;
     margin: auto;
-    display: block;/* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
+    display: block;
+    /* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
     object-fit: cover;
-    transform: rotate(-4deg); /* Un ligero giro para un efecto polaroid */
+    transform: rotate(-4deg);
+    /* Un ligero giro para un efecto polaroid */
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  .img_important:hover {
-    transform: scale(1.05); 
+.img_important:hover {
+    transform: scale(1.05);
+}
+
+.div_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div>label {
+    color: #1AAB8A;
+    font-size: 30px;
+}
+
+
+/* Dark Mode */
+body {
+    transition: 0.5s ease-in-out;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #434343;
+    appearance: none;
+    /* Hides certain features of widgets */
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #141e30;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.light-mode {
+    background-color: #f1f1f1;
+    color: #1AAB8A;
+}
+
+.light-mode-button {
+    background: #141e30;
+    color: #fff;
+}
+
+.light-mode-button:hover {
+    background: #314652;
+    color: #fff;
+}
+
+.light-mode-button:before,
+.light-mode-button:after {
+    border: 2px #fff;
+    background: #fff;
+}
+
+.light-mode-span {
+    color: #141e30 !important;
+}
+
+.light-mode-h1 {
+    color: #141e30;
+}
+
+.light-mode-footer {
+    color: #141e30;
+}
+
+.light-mode-article {
+    background-color: #141e30;
+    color: #fff;
+}
+
+.light-mode-strong {
+    color: #fff !important;
+}
+
+.light-mode-a {
+    color: #fff !important;
+    background-color: #141e30 !important;
+}
+
+.light-mode-label-checkitem {
+    color: #141e30 !important;
+}
+
+.light-mode-section_form{
+    background-color: #141e30 !important; 
+}
+
+.light-mode-button_form {
+    background: #fff;
+    color: #141e30;
+}
+
+.light-mode-button_form:hover {
+    background-color: #314652 !important; 
+    color: #fff;
+}
+
+.light-mode-button_form:before,
+.light-mode-button_form:after {
+    border: 2px #fff;
+    background: #fff;
 }

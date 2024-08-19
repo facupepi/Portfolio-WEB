@@ -23,7 +23,11 @@
 <body class="container">
 
     <header>
-        <h1 class="h1-title">ESTUDIOS.</h1>
+        <div class="div_title">
+            <h1 class="h1-title">ESTUDIOS.</h1>
+            <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
+            <input id="checkitem" type="checkbox" onclick="enableDarkMode_education()">
+        </div>
 
         <nav class="other_pages_nav">
             <a href="index.html" class="fa fa-arrow-left"></a>
@@ -66,7 +70,9 @@
     </main>
 
     <footer>©2024 Derechos Reservados</footer>
-
+    
+    <script src="script/script_education.js"></script>
+    
 </body>
 
 </html>

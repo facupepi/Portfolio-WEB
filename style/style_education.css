@@ -76,8 +76,7 @@
 
 h3,p{
     font-family: "Titillium Web", sans-serif;
-    font-weight: 00;
-    font-style: small;
+    font-size: 15px;
     color: #ccc;
 }
 
@@ -98,7 +97,7 @@ article:hover {
 .span-item-course{
     font-family: "Titillium Web", sans-serif;
     font-weight: 500;
-    font-style: small;
+    font-size: 25px;
     color: #fff;
 }
 
@@ -132,4 +131,5 @@ article:hover {
     }
 
 }
+
 

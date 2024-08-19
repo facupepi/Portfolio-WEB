@@ -1,4 +1,4 @@
-.span-greetings{
+.span-greetings {
     font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -111,35 +111,42 @@
     max-height: 75%;
     height: auto;
     margin: auto;
-    display: block;/* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
+    display: block;
+    /* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
     border-radius: 10%;
     object-fit: cover;
     padding: 10px;
-    background: #fff; /* Fondo blanco */
+    background: #fff;
+    /* Fondo blanco */
     border: 2px solid #c0c0c0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: rotate(-2deg); /* Un ligero giro para un efecto polaroid */
+    transform: rotate(-2deg);
+    /* Un ligero giro para un efecto polaroid */
     transition: transform 0.3s ease-in-out;
+    transition: 0.7s ease;
+    /* Para transicion de modo claro a modo oscuro*/
 }
 
 .img_main:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 /*Botones*/
-.first_page_nav{
+.first_page_nav {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.first_page_nav a{
+.first_page_nav a {
     text-decoration: none;
-    display: flex;  /*  Esto hace que los elementos hijos (en este caso, los botones) se dispongan dentro del <a> usando las propiedades de flexbox. */
+    display: flex;
+    /*  Esto hace que los elementos hijos (en este caso, los botones) se dispongan dentro del <a> usando las propiedades de flexbox. */
 }
 
 button {
-    flex-grow: 1; /*Indica que el botón debe expandirse para ocupar todo el espacio disponible dentro del contenedor flex (el <a>). */
-    
+    flex-grow: 1;
+    /*Indica que el botón debe expandirse para ocupar todo el espacio disponible dentro del contenedor flex (el <a>). */
+
     border-radius: 5px;
     margin: 20px;
     padding: 0 2em;
@@ -195,36 +202,14 @@ button:hover:after {
 
 @media (max-width: 768px) {
 
-    header{
-        justify-content: space-between;
-        /* Distribuye los elementos a lo largo del eje principal */
-        align-items: center;
-        /* Centra los elementos en el eje cruzado */
-    }
-
-    
-    main {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .section_first,
-    .section_second {
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    header{
+    header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         min-height: 180px;
     }
 
+
     main {
         flex-direction: column;
         height: auto;
@@ -236,3 +221,8 @@ button:hover:after {
     }
 
 }
+
+
+
+
+

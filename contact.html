@@ -24,7 +24,11 @@
 <body class="container">
 
     <header>
-        <h1 class="h1-title">CONTACTO.</h1>
+        <div class="div_title">
+            <h1 class="h1-title">CONTACTO.</h1>
+            <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
+            <input id="checkitem" type="checkbox" onclick="enableDarkMode_contact()">
+        </div>
 
         <nav class="other_pages_nav">
             <a href="aboutme.html" class="fa fa-arrow-left"></a>
@@ -49,25 +53,25 @@
 
                     <div class="div_firstname_surname">
                         <label for="first_name" >Nombre</label>
-                        <input required type="text" name="first_name" placeholder="Ingrese su nombre..." maxlength="30">
+                        <input required id="first_name" type="text" name="first_name" placeholder="Ingrese su nombre..." maxlength="30">
             
                         <label for="surn_name" >Apellido</label>
-                        <input required type="text" name="surn_name" placeholder="Ingrese su apellido..." maxlength="30">
+                        <input required id="surn_name" type="text" name="surn_name" placeholder="Ingrese su apellido..." maxlength="30">
                     </div>
 
                     <div class="field-group">
                         <label for="subject" >Asunto</label>
-                        <input required type="text" name="subject" placeholder="Motivo del contacto..." maxlength="30">
+                        <input required id="subject" type="text" name="subject" placeholder="Motivo del contacto..." maxlength="30">
                     </div>
 
                     <div class="field-group">
                         <label for="email" >Email</label>
-                        <input required type="email" name="email" placeholder="Ingrese su mail..." maxlength="50">
+                        <input required id="email" type="email" name="email" placeholder="Ingrese su mail..." maxlength="50">
                     </div>
                     
                     <div class="field-group">
                         <label for="message" >Mensaje</label>
-                        <textarea required name="message" placeholder="Hola! Me comunico por..." maxlength="300"></textarea>
+                        <textarea required id="message" name="message" placeholder="Hola! Me comunico por..." maxlength="300"></textarea>
                     </div>
                     
                     <div class="field-group">
@@ -83,12 +87,11 @@
             <img class="img_important" alt="Foto de correo" src="img/correo.png">
         </section>
 
-        
-        
     </main>
 
     <footer>©2024 Derechos Reservados</footer>
 
+    <script src="script/script_contact.js"></script>
 </body>
 
 </html>
