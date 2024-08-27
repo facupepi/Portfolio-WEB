@@ -239,8 +239,8 @@ input[type="checkbox"]:checked::before {
 }
 
 .light-mode-article {
-    background-color: #141e30;
-    color: #fff;
+    background-color: #fff !important;
+    color: #141e30 !important;
 }
 
 .light-mode-strong {

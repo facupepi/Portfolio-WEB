@@ -25,10 +25,7 @@ function enableDarkMode_education() {
         spans[i].classList.toggle("light-mode-span");
     }
 
-    let strong = document.querySelectorAll("strong");
-    for (i = 0; i < strong.length; i++) {
-        strong[i].classList.toggle("light-mode-strong");
-    }
+    
 
     let h1 = document.querySelector("h1");
     h1.classList.toggle("light-mode-h1");
@@ -39,6 +36,26 @@ function enableDarkMode_education() {
     let article = document.querySelectorAll("article");
     for (i = 0; i < article.length; i++) {
         article[i].classList.toggle("light-mode-article");
+    }
+
+    let articles_p = document.querySelectorAll("p");
+    for (i = 0; i < articles_p.length; i++) {
+        articles_p[i].classList.toggle("light-mode-p-article");
+    }
+
+    let articles_stong = document.querySelectorAll("strong");
+    for (i = 0; i < articles_stong.length; i++) {
+        articles_stong[i].classList.toggle("light-mode-strong-article");
+    }
+
+    let strong = document.querySelectorAll("strong");
+    for (i = 0; i < strong.length; i++) {
+        strong[i].classList.toggle("light-mode-strong");
+    }
+
+    let articles_h2 = document.querySelectorAll("h2");
+    for (i = 0; i < articles_h2.length; i++) {
+        articles_h2[i].classList.toggle("light-mode-h2-article");
     }
 
     let a = document.querySelectorAll("nav > a");

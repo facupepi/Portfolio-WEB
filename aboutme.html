@@ -13,6 +13,7 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_aboutme.css">
 
     <script src="https://kit.fontawesome.com/8e61ff2e0c.js" crossorigin="anonymous"></script>
 
@@ -20,9 +21,14 @@
 </head>
 
 <body class="container">
-
     <header>
-        <h1 class="h1-title">ACERCA DE MI.</h1>
+        <div class="div_title">
+            <h1 class="h1-title">ACERCA DE MI.</h1>
+            <div class="div_checkitem">
+                <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
+                <input id="checkitem" type="checkbox" onclick="enableDarkMode_aboutme()">
+            </div>
+        </div>
 
         <nav class="other_pages_nav">
             <a href="projects.html" class="fa fa-arrow-left"></a>
@@ -31,17 +37,48 @@
 
         <section class="social_media">
             <a target="_blank" aria-label="Mail" href="mailto:facujoel2018@gmail.com" class="fa fa-envelope"></a>
-            <a target="_blank" aria-label="Instagram" href="https://www.instagram.com/facuu_pepino/" class="fa fa-instagram"></a>
-            <a target="_blank" aria-label="Linkedin" href="https://www.linkedin.com/in/facundo-pepino/" class="fa fa-linkedin"></a>
+            <a target="_blank" aria-label="Instagram" href="https://www.instagram.com/facuu_pepino/"
+                class="fa fa-instagram"></a>
+            <a target="_blank" aria-label="Linkedin" href="https://www.linkedin.com/in/facundo-pepino/"
+                class="fa fa-linkedin"></a>
         </section>
     </header>
 
     <main>
+        <section class="section_card section_skills">
+            <h2>Habilidades</h2>
+            <article class="skill">     <i class="fa-solid fa-code"></i>       <h3>Programación Orientada a Objetos</h3>       </article>
+            <article class="skill">     <i class="fa-solid fa-cogs"></i>       <h3>Modelado de Procesos de Negocio</h3>        </article>
+            <article class="skill">     <i class="fa-solid fa-chart-line"></i> <h3>Estadísticas</h3>                           </article>
+            <article class="skill">     <i class="fa-solid fa-brain"></i>      <h3>Resolución de Problemas</h3>                </article>
+        </section>
 
+        <section class="section_card section_languages">
+            <h2>Lenguajes</h2>
+            <article class="skill">     <i class="fa-brands fa-html5"></i>     <h3>HTML</h3>                                   </article>
+            <article class="skill">     <i class="fa-brands fa-css3-alt"></i>  <h3>CSS</h3>                                    </article>
+            <article class="skill">     <i class="fa-brands fa-js"></i>        <h3>JavaScript</h3>                             </article>
+            <article class="skill">     <i class="fa-solid fa-c"></i>          <h3>C++</h3>                                    </article>
+            <article class="skill">     <i class="fa-solid fa-code"></i>       <h3>ABAP</h3>                                   </article>
+        </section>
+
+        <section class="section_photo">
+            <img class="personal_photo" src="img/sinfondo2.png">
+        </section>
+
+        <section class="section_card section_experience">
+            <h2>Experiencia Laboral</h2>
+            <p>He trabajado como desarrollador SAP ABAP, donde mi pasión es crear soluciones personalizadas que ayuden a las empresas a alcanzar sus objetivos. Disfruto optimizando la eficiencia y la calidad del código, y mi experiencia en equipos multidisciplinarios me ha enseñado a comprender las necesidades del negocio y convertirlas en soluciones técnicas eficaces. Estoy entusiasmado por seguir creciendo y enfrentar nuevos desafíos.</p>
+        </section>
+
+        <section class="section_cv">
+            <button>Descargar CV</button>
+        </section>
     </main>
 
     <footer>©2024 Derechos Reservados</footer>
 
+    <script src="script/script_aboutme.js"></script>
 </body>
 
 </html>

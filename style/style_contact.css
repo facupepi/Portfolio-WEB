@@ -1,3 +1,7 @@
+main{
+    margin: 0px 50px 0px 50px;
+}
+
 .span-form:after {
     content: "";
     animation: abomination3 3s ease-out;

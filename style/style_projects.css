@@ -25,6 +25,11 @@
     transition: 1s ease;
 }
 
+article:hover {
+    transition: transform 0.2s ease-in-out;
+    background-color: #273454;
+}
+
 .article_img{
     max-width: 60%;
     max-height: 60%;

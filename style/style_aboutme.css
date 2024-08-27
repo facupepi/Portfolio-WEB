@@ -1,0 +1,165 @@
+main {
+    display: grid;
+    grid-template-areas:
+    "section_skills section_languages section_photo" 
+    "section_experience section_experience section_cv"; 
+    gap: 20px; /* Espacio entre las secciones */
+    margin: 50px;
+    grid-template-columns: 1fr 1fr 1fr; /* Distribuye el ancho de forma equitativa */
+}
+
+.section_card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente dentro de la sección */
+    background: #2c3e50; /* Fondo oscuro para resaltar el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra suave */
+    transition: 0.5s ease;
+    width: 100%; /* Hace que cada sección ocupe todo el espacio disponible en su columna */
+    height: 100%; /* Asegura que las secciones tengan la misma altura */
+    padding: 5px;
+}
+
+.section_card:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.section_skills {
+    grid-area: section_skills;
+}
+
+.section_languages {
+    grid-area: section_languages;
+}
+
+.section_photo {
+    text-align: center;
+    align-content: center;
+    grid-area: section_photo;
+}
+
+.section_experience{
+    grid-area: section_experience;
+}
+
+.section_cv{
+    grid-area: section_cv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen dentro de la sección de habilidades 
+.skills_photo {
+    object-fit: contain;
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 10px; } /* Redondeado leve en las esquinas */
+
+/* Imagen personal */
+.personal_photo {
+    object-fit: contain;
+    max-height: 300px; /* Altura máxima definida para mantener la proporción */
+    max-width: 300px; /* Ancho máximo definido */
+    border-radius: 50%; /* Transformando en imagen circular */
+}
+
+/* Títulos */
+h2 {
+    margin: 0;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 25px; /* Tamaño de fuente ligeramente aumentado */
+    color: #ffffff; /* Color blanco para mejor contraste */
+    margin-bottom: 15px; /* Espaciado inferior para separar del contenido */
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+p {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-size: 15px; 
+    color: #cccccc; 
+    margin: 10px 0; 
+    text-align: center;
+}
+
+.skill, .language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill i, .language i {
+    font-size: 20px;
+    color: #1AAB8A;
+    margin-right: 10px;
+}
+
+.skill h3, .language h3 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+button {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 0 2em;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
