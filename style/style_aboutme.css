@@ -2,9 +2,9 @@ main {
     display: grid;
     grid-template-areas:
     "section_skills section_languages section_photo" 
-    "section_experience section_experience section_cv"; 
+    "section_experience section_information section_cv"; 
     gap: 20px; /* Espacio entre las secciones */
-    margin: 50px;
+    margin: 40px;
     grid-template-columns: 1fr 1fr 1fr; /* Distribuye el ancho de forma equitativa */
 }
 
@@ -15,15 +15,16 @@ main {
     align-items: center; /* Centra el contenido horizontalmente dentro de la sección */
     background: #2c3e50; /* Fondo oscuro para resaltar el contenido */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra suave */
-    transition: 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: 1s ease;
     width: 100%; /* Hace que cada sección ocupe todo el espacio disponible en su columna */
     height: 100%; /* Asegura que las secciones tengan la misma altura */
     padding: 5px;
 }
 
 .section_card:hover {
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+    transition: transform 0.2s ease-in-out;
+    background-color: #273454;
     transform: translateY(-5px);
 }
 
@@ -45,12 +46,29 @@ main {
     grid-area: section_experience;
 }
 
+.section_information{
+    grid-area: section_information;
+}
+
+.article-experience{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .section_cv{
     grid-area: section_cv;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#img-sap{
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 50px;
 }
 
 /* Imagen dentro de la sección de habilidades 
@@ -82,6 +100,14 @@ h2 {
     width: 100%;
 }
 
+h3{
+    margin: 0;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-size: 19px; /* Tamaño de fuente ligeramente aumentado */
+    color: #ffffff; /* Color blanco para mejor contraste */
+}
 
 p {
     font-family: "Titillium Web", sans-serif;
@@ -104,17 +130,9 @@ p {
     margin-right: 10px;
 }
 
-.skill h3, .language h3 {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: #e0e0e0;
-    margin: 0;
-}
 
 button {
     border-radius: 5px;
-    margin: 20px;
     padding: 0 2em;
     background: #1AAB8A;
     color: #fff;
@@ -130,7 +148,7 @@ button {
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 button:hover {
@@ -163,3 +181,22 @@ button:hover:after {
     transition: 800ms ease all;
 }
 
+
+@media (max-width: 900px) {
+
+    main .section_card:first-child{
+        margin-top: 100px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        min-height: 180px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}

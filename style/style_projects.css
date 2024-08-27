@@ -28,6 +28,7 @@
 article:hover {
     transition: transform 0.2s ease-in-out;
     background-color: #273454;
+    transform: translateY(-5px);
 }
 
 .article_img{
