@@ -206,7 +206,8 @@ button:hover:after {
 }/* Para cuando se coloca el mouse sobre el cubo*/
 
 .rubiks-cube:active{
-    scale: 4;
+    scale: 2;
+    transition: 1s ease;
 }
 .rubiks-cube:active::after{
     scale: normal;

@@ -36,11 +36,6 @@ function enableDarkMode_proyectos() {
     let footer = document.querySelector("footer");
     footer.classList.toggle("light-mode-footer");
 
-    let article = document.querySelectorAll("article");
-    for (i = 0; i < article.length; i++) {
-        article[i].classList.toggle("light-mode-article");
-    }
-
     let a = document.querySelectorAll("nav > a");
     for (i = 0; i < a.length; i++) {
         a[i].classList.toggle("light-mode-a");
@@ -53,4 +48,24 @@ function enableDarkMode_proyectos() {
 
     let label_checkitem = document.querySelector("div > label");
     label_checkitem.classList.toggle("light-mode-label-checkitem");
+
+    let articles = document.querySelectorAll(".article_project");
+    for (i = 0; i < articles.length; i++) {
+        articles[i].classList.toggle("light-mode-article_project");
+    }
+
+    let articles_h2 = document.querySelectorAll("h2");
+    for (i = 0; i < articles_h2.length; i++) {
+        articles_h2[i].classList.toggle("light-mode-h2-article");
+    }
+
+    let articles_p = document.querySelectorAll("p");
+    for (i = 0; i < articles_p.length; i++) {
+        articles_p[i].classList.toggle("light-mode-p-article");
+    }
+
+    let articles_stong = document.querySelectorAll("strong");
+    for (i = 0; i < articles_stong.length; i++) {
+        articles_stong[i].classList.toggle("light-mode-strong-article");
+    }
 }

@@ -5,9 +5,97 @@
 }
 
 .section_main_projects{
-    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
     align-content: center;
 }
+
+.article_project {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50; /* Fondo oscuro para resaltar el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: 1s ease;
+}
+
+.article_img{
+    max-width: 60%;
+    max-height: 60%;
+    margin: auto;
+    display: block; /* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
+}
+
+.article_project p{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+.article_project h2{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: #e0e0e0;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    border-radius: 5px;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 45px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -25,6 +113,15 @@
         height: auto;
     }
 
+    .section_main_projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article_project{
+        width: 90%;
+    }
+
+
     .div_header{
         gap: 0px;
         flex-direction: column;
@@ -33,5 +130,6 @@
     }
 
 }
+
 
 

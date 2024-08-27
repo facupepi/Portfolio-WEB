@@ -275,3 +275,19 @@ input[type="checkbox"]:checked::before {
     border: 2px #fff;
     background: #fff;
 }
+
+.light-mode-h2-article{
+    color: #141e30 !important;
+}
+
+.light-mode-p-article{
+    color: #141e30 !important;
+}
+
+.light-mode-strong-article{
+    color: #141e30 !important;
+}
+
+.light-mode-article_project{
+    background-color: #fff !important;
+}
