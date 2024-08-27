@@ -28,9 +28,6 @@ function enableDarkMode_contact() {
     let h1 = document.querySelector("h1");
     h1.classList.toggle("light-mode-h1");
 
-    let img = document.querySelector("img");
-    img.classList.toggle("light-mode-img");
-
     let footer = document.querySelector("footer");
     footer.classList.toggle("light-mode-footer");
 
@@ -49,4 +46,7 @@ function enableDarkMode_contact() {
 
     let section_form = document.querySelector(".section_form");
     section_form.classList.toggle("light-mode-section_form");
+
+    let typewriter = document.querySelector(".typewriter");
+    typewriter.classList.toggle("light-mode-typewriter");
 }

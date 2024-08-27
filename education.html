@@ -25,8 +25,10 @@
     <header>
         <div class="div_title">
             <h1 class="h1-title">ESTUDIOS.</h1>
-            <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
-            <input id="checkitem" type="checkbox" onclick="enableDarkMode_education()">
+            <div class="div_checkitem">
+                <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
+                <input id="checkitem" type="checkbox" onclick="enableDarkMode_education()">
+            </div>
         </div>
 
         <nav class="other_pages_nav">
@@ -64,7 +66,15 @@
         </section>
 
         <section class="section_second">
-            <img class="img_important" alt="Imagen Educativa" src="img/ingenieria.png">
+            <div class="cube-loader">
+                <div class="cube-top"></div>
+                <div class="cube-wrapper">
+                  <span style="--i:0" class="cube-span"></span>
+                  <span style="--i:1" class="cube-span"></span>
+                  <span style="--i:2" class="cube-span"></span>
+                  <span style="--i:3" class="cube-span"></span>
+                </div>
+              </div>
         </section>
 
     </main>

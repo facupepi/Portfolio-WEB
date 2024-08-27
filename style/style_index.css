@@ -106,31 +106,6 @@
     }
 }
 
-.img_main {
-    max-width: 75%;
-    max-height: 75%;
-    height: auto;
-    margin: auto;
-    display: block;
-    /* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
-    border-radius: 10%;
-    object-fit: cover;
-    padding: 10px;
-    background: #fff;
-    /* Fondo blanco */
-    border: 2px solid #c0c0c0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: rotate(-2deg);
-    /* Un ligero giro para un efecto polaroid */
-    transition: transform 0.3s ease-in-out;
-    transition: 0.7s ease;
-    /* Para transicion de modo claro a modo oscuro*/
-}
-
-.img_main:hover {
-    transform: scale(1.05);
-}
-
 /*Botones*/
 .first_page_nav {
     display: flex;
@@ -209,7 +184,6 @@ button:hover:after {
         min-height: 180px;
     }
 
-
     main {
         flex-direction: column;
         height: auto;
@@ -219,10 +193,86 @@ button:hover:after {
     .section_second {
         width: 100%;
     }
-
 }
 
+/* CUBO RUBIK */
 
+.cube{transition: 1s ease;} /* Para cuando se cambia de color en el modo oscuro*/
 
+.rubiks-cube:hover{
+    scale: 1.2;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+}/* Para cuando se coloca el mouse sobre el cubo*/
 
+.rubiks-cube:active{
+    scale: 4;
+}
+.rubiks-cube:active::after{
+    scale: normal;
+}
 
+.my-loader {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 100px auto;
+}
+
+.rubiks-cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: my-rotateCube 5s infinite linear;
+    transition: ease-in 0.5s;/* Para cuando se coloca el mouse sobre el cubo*/
+}
+
+.my-loader .face {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.my-loader .face.front {
+    transform: translateZ(100px);
+}
+
+.my-loader .face.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.my-loader .face.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.my-loader .face.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.my-loader .face.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.my-loader .face.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.my-loader .cube {
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+@keyframes my-rotateCube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}

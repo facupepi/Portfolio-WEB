@@ -13,6 +13,7 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_projects.css">
 
     <script src="https://kit.fontawesome.com/8e61ff2e0c.js" crossorigin="anonymous"></script>
 
@@ -22,7 +23,13 @@
 <body class="container">
 
     <header>
-        <h1 class="h1-title">PROYECTOS.</h1>
+        <div class="div_title">
+            <h1 class="h1-title">PROYECTOS.</h1>
+            <div class="div_checkitem">
+                <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
+                <input id="checkitem" type="checkbox" onclick="enableDarkMode_proyectos()">
+            </div>
+        </div>
 
         <nav class="other_pages_nav">
             <a href="education.html" class="fa fa-arrow-left"></a>
@@ -36,12 +43,17 @@
         </section>
     </header>
 
-    <main>
-       
+    <main id="main_projects">
+        
+        <section class="section_main_projects">
+            
+        </section>
 
     </main>
 
     <footer>©2024 Derechos Reservados</footer>
+
+    <script src="script/script_projects.js"></script>
 
 </body>
 

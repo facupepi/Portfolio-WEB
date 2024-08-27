@@ -26,10 +26,12 @@
     <header>
         <div class="div_title">
             <h1 class="h1-title">PORTFOLIO WEB.</h1>
-            <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
-            <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+            <div class="div_checkitem">
+                <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
+                <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+            </div>
         </div>
-
+        
         <section class="social_media">
             <a target="_blank" aria-label="Mail" href="mailto:facujoel2018@gmail.com" class="fa fa-envelope"></a>
             <a target="_blank" aria-label="Instagram" href="https://www.instagram.com/facuu_pepino/"
@@ -67,7 +69,79 @@
         </section>
 
         <section class="section_second">
-            <img class="img_main" alt="Foto sobre Facundo Pepino" src="img/foto_principal.jpg">
+            <!---Cubo Rubik-->
+            <div class="my-loader">
+                <div class="rubiks-cube" onclick="cambiarColorCubo()">
+                    <div class="face front">
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                    </div>
+
+                    <div class="face back">
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                    </div>
+                    <div class="face left">
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                    </div>
+                    <div class="face right">
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                    </div>
+                    <div class="face top">
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                    </div>
+                    <div class="face bottom">
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                        <div style="background: #ffeb3b;" class="cube"></div>
+                        <div style="background: #4caf50;" class="cube"></div>
+                        <div style="background: #2196f3;" class="cube"></div>
+                        <div style="background: #ffffff;" class="cube"></div>
+                        <div style="background: #ff3d00;" class="cube"></div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </main>

@@ -1,5 +1,4 @@
-
-.span-mystudies:after{
+.span-mystudies:after {
     content: "";
     animation: abomination2 3s ease-out;
     animation-fill-mode: forwards;
@@ -65,7 +64,7 @@
     }
 }
 
-.h2-course{
+.h2-course {
     font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -74,7 +73,8 @@
     margin: 0;
 }
 
-h3,p{
+h3,
+p {
     font-family: "Titillium Web", sans-serif;
     font-size: 15px;
     color: #ccc;
@@ -94,19 +94,26 @@ article:hover {
     background-color: #273454;
 }
 
-.span-item-course{
+.span-item-course {
     font-family: "Titillium Web", sans-serif;
     font-weight: 500;
     font-size: 25px;
     color: #fff;
 }
 
+.section_second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-  /* MediaQueries Para Education*/
+
+/* MediaQueries Para Education*/
 
 @media (max-width: 950px) {
 
-    header{
+    header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -115,11 +122,11 @@ article:hover {
         margin-bottom: 100px;
     }
 
-    .h1-title{
+    .h1-title {
         width: fit-content;
     }
 
-    
+
     main {
         flex-direction: column;
         height: auto;
@@ -128,8 +135,121 @@ article:hover {
     .section_first,
     .section_second {
         width: 100%;
+        min-height: 350PX;
     }
 
 }
 
 
+
+
+/* CUBO 3D*/
+.cube-loader {
+    scale: 3;
+    position: relative;
+    /* u can choose any size */
+    width: 75px;
+    height: 75px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube-loader .cube-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    left: 0; */
+    transform-style: preserve-3d;
+}
+
+.cube-loader .cube-wrapper .cube-span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+    /* width 75px / 2 = 37.5px */
+    background: linear-gradient(to bottom,
+    hsl(330, 3.13%, 25.1%) 0%,
+    hsl(177.27, 21.71%, 28%) 5%,
+    hsl(176.67, 34.1%, 32%) 10%,
+    hsl(176.61, 42.28%, 36%) 15%,
+    hsl(176.63, 48.32%, 40%) 20%,
+    hsl(176.66, 53.07%, 44%) 25%,
+    hsl(176.7, 56.94%, 48%) 30%,
+    hsl(176.74, 62.39%, 50%) 35%,
+    hsl(176.77, 69.86%, 52%) 40%,
+    hsl(176.8, 76.78%, 54%) 45%,
+    hsl(176.83, 83.02%, 55%) 50%,
+    hsl(176.85, 88.44%, 56%) 55%,
+    hsl(176.86, 92.9%, 57%) 60%,
+    hsl(176.88, 96.24%, 57.5%) 65%,
+    hsl(176.88, 98.34%, 58%) 70%,
+    hsl(176.89, 99.07%, 58.2%) 75%,
+    hsl(176.89, 99.07%, 58.4%) 80%,
+    hsl(176.89, 99.07%, 58.6%) 85%,
+    hsl(176.89, 99.07%, 58.8%) 90%,
+    hsl(176.89, 99.07%, 59%) 100%);
+}
+
+.cube-top {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: hsl(330, 3.13%, 25.1%) 0%;
+    /* width 75px / 2 = 37.5px */
+    transform: rotateX(90deg) translateZ(37.5px);
+    transform-style: preserve-3d;
+}
+
+.cube-top::before {
+    content: '';
+    position: absolute;
+    /* u can choose any size */
+    width: 75px;
+    height: 75px;
+    background: hsl(176.61, 42.28%, 40.7%) 19.6%;
+    transform: translateZ(-90px);
+    filter: blur(10px);
+    box-shadow: 0 0 10px #323232,
+        0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
+        0 0 30px #323232,
+        0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
+}
+
+.light-mode-cube-span{
+    background: linear-gradient(to bottom,
+    #141e30 0%,
+    hsl(210, 50%, 20%) 5%,
+    hsl(210, 47%, 25%) 10%,
+    hsl(210, 44%, 30%) 15%,
+    hsl(210, 41%, 35%) 20%,
+    hsl(210, 38%, 40%) 25%,
+    hsl(210, 35%, 45%) 30%,
+    hsl(210, 32%, 50%) 35%,
+    hsl(210, 29%, 55%) 40%,
+    hsl(210, 26%, 60%) 45%,
+    hsl(210, 23%, 65%) 50%,
+    hsl(210, 20%, 70%) 55%,
+    hsl(210, 17%, 75%) 60%,
+    hsl(210, 14%, 80%) 65%,
+    hsl(210, 11%, 85%) 70%,
+    hsl(210, 8%, 88%) 75%,
+    hsl(210, 5%, 91%) 80%,
+    hsl(210, 3%, 94%) 85%,
+    hsl(210, 1%, 97%) 90%,
+    hsl(210, 0%, 100%) 100%) !important;
+}
+    

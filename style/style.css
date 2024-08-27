@@ -147,8 +147,18 @@ main {
 
 .div_title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin: 0;
+    text-align: center;
+    max-width: 240px;
+}
+
+.div_checkitem{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
 }
 
 div>label {

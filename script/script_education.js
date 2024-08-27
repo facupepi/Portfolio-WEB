@@ -33,9 +33,6 @@ function enableDarkMode_education() {
     let h1 = document.querySelector("h1");
     h1.classList.toggle("light-mode-h1");
 
-    let img = document.querySelector("img");
-    img.classList.toggle("light-mode-img");
-
     let footer = document.querySelector("footer");
     footer.classList.toggle("light-mode-footer");
 
@@ -56,4 +53,9 @@ function enableDarkMode_education() {
 
     let label_checkitem = document.querySelector("div > label");
     label_checkitem.classList.toggle("light-mode-label-checkitem");
+
+    let cube = document.querySelectorAll(".cube-loader .cube-wrapper .cube-span");
+    for (i = 0; i < cube.length; i++) {
+        cube[i].classList.toggle("light-mode-cube-span");
+    }
 }
