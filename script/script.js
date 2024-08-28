@@ -21,7 +21,7 @@ window.onload = function () {
         document.getElementById("checkitem").checked = true;
         enableDarkMode_aboutme();
     } else if (localStorage.getItem("mode") == null) {
-        let mode_light = false;
+        mode_light = false;
         document.getElementById("checkitem").checked = false;
         localStorage.setItem("mode", mode_light);
     }
