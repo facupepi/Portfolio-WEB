@@ -1,31 +1,31 @@
 let mode_light;
 
 /*Cada vez que se carga la pagina se verifica en que HTML estamos y el modo que posee*/
-
-var LocationActual = window.location.pathname;
-console.log(LocationActual);
-if (localStorage.getItem("mode") == "true" && LocationActual == "/projects.html") {
-    document.getElementById("checkitem").checked = true;
-    enableDarkMode_proyectos();
-} else if (localStorage.getItem("mode") == "true" && LocationActual == "/index.html") {
-    document.getElementById("checkitem").checked = true;
-    enableDarkMode();
-} else if (localStorage.getItem("mode") == "true" && LocationActual == "/education.html") {
-    document.getElementById("checkitem").checked = true;
-    enableDarkMode_education();
-} else if (localStorage.getItem("mode") == "true" && LocationActual == "/contact.html") {
-    document.getElementById("checkitem").checked = true;
-    enableDarkMode_contact();
-} else if (localStorage.getItem("mode") == "true" && LocationActual == "/aboutme.html") {
-    document.getElementById("checkitem").checked = true;
-    enableDarkMode_aboutme();
-} else if (localStorage.getItem("mode") == null) {
-    console.log('Aca');
-    let mode_light = false;
-    document.getElementById("checkitem").checked = false;
-    localStorage.setItem("mode", mode_light);
-}
-
+window.onload = function () {
+    var LocationActual = window.location.pathname;
+    console.log(LocationActual);
+    console.log(mode_light);
+    if (localStorage.getItem("mode") == "true" && LocationActual == "/projects.html") {
+        document.getElementById("checkitem").checked = true;
+        enableDarkMode_proyectos();
+    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/index.html") {
+        document.getElementById("checkitem").checked = true;
+        enableDarkMode();
+    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/education.html") {
+        document.getElementById("checkitem").checked = true;
+        enableDarkMode_education();
+    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/contact.html") {
+        document.getElementById("checkitem").checked = true;
+        enableDarkMode_contact();
+    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/aboutme.html") {
+        document.getElementById("checkitem").checked = true;
+        enableDarkMode_aboutme();
+    } else if (localStorage.getItem("mode") == null) {
+        let mode_light = false;
+        document.getElementById("checkitem").checked = false;
+        localStorage.setItem("mode", mode_light);
+    }
+};
 
 function enableDarkMode() {
     mode_light = !mode_light;
