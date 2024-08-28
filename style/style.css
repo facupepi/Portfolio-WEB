@@ -1,3 +1,6 @@
+
+/* HEADER ---------------------------------------*/
+
 header {
     width: 100%;
     height: 100px;
@@ -8,141 +11,6 @@ header {
     /* Distribuye los elementos a lo largo del eje principal */
     align-items: center;
     /* Centra los elementos en el eje cruzado */
-}
-
-body {
-    margin: 0;
-    background: #141e30;
-}
-
-.h1-title {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    color: #fff;
-    margin: 20px;
-    display: block;
-    width: 250px;
-}
-
-footer {
-    text-align: right;
-    padding: 10px;
-    font-size: 14px;
-    color: #c0c0c0;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* Clase del Body que contiene al footer, main y header  */
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    max-height: 100vh;
-    /* Forzar a que se ocupe solamente la parte visible de la pantalla */
-}
-
-/* Se utiliza FLEX para disponer al header, main y footer en columnas */
-
-main {
-    max-height: 100vh - 150px;
-    display: flex;
-    flex-direction: row;
-}
-
-/* Se utiliza FLEX para disponer a los div centrales que contiene el Main en 1 fila*/
-
-.section_first {
-    width: 60%;
-    text-align: center;
-    align-content: center;
-}
-
-/* El primer div ocupa el 60% del ancho total y alinea el texto al centro*/
-
-.section_second {
-    width: 40%;
-    border-radius: 10px;
-    align-content: center;
-}
-
-/* El segundo div ocupa el 40% del ancho total y alinea su contenido al centro (verticalmente)*/
-
-/*Redes Sociales*/
-
-.social_media {
-    height: 100px;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social_media a {
-    text-decoration: none;
-    margin: 10px;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: #314652;
-    color: #f1f1f1;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-}
-
-.social_media a:hover {
-    transform: scale(1.2);
-}
-
-
-/*Navegacion Otras paginas*/
-
-.other_pages_nav {
-    max-width: 300px;
-    display: flex;
-    justify-content: end;
-}
-
-.other_pages_nav a {
-    text-decoration: none;
-    margin: 10px;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: #1AAB8A;
-    color: #f1f1f1;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-}
-
-.other_pages_nav a:hover {
-    transform: scale(1.2);
-}
-
-.img_important {
-    max-width: 85%;
-    max-height: 85%;
-    height: auto;
-    margin: auto;
-    display: block;
-    /* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
-    object-fit: cover;
-    transform: rotate(-4deg);
-    /* Un ligero giro para un efecto polaroid */
-    transition: transform 0.3s ease-in-out;
-}
-
-.img_important:hover {
-    transform: scale(1.05);
 }
 
 .div_title {
@@ -166,12 +34,69 @@ div>label {
     font-size: 30px;
 }
 
-
-/* Dark Mode */
-body {
-    transition: 0.5s ease-in-out;
+.h1-title {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #fff;
+    margin: 20px;
+    display: block;
+    width: 250px;
 }
 
+/*Navegacion Otras paginas*/
+
+.other_pages_nav {
+    max-width: 300px;
+    display: flex;
+    justify-content: end;
+}
+.other_pages_nav a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #1AAB8A;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+.other_pages_nav a:hover {
+    transform: scale(1.2);
+}
+
+/*Redes Sociales*/
+.social_media {
+    height: 100px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_media a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+.social_media a:hover {
+    transform: scale(1.2);
+}
+
+/* CheckBox DarkMode */
 input[type="checkbox"] {
     position: relative;
     width: 40px;
@@ -205,11 +130,142 @@ input[type="checkbox"]:checked::before {
     transform: translateX(20px);
 }
 
+/* HEADER ---------------------------------------*/
+
+
+/* BODY ---------------------------------------*/
+
+/* Clase del Body que contiene al footer, main y header  */
+.container {
+    transition: 0.5s ease-in-out;
+    margin: 0;
+    background: #141e30;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    /* Forzar a que se ocupe solamente la parte visible de la pantalla */
+}
+
+/* Se utiliza FLEX para disponer al header, main y footer en columnas */
+main {
+    max-height: 100vh - 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 50px 0px 50px;
+}
+
+/* Se utiliza FLEX para disponer a los div centrales que contiene el Main en 1 fila*/
+.section_first {
+    width: 60%;
+    text-align: center;
+    align-content: center;
+}
+.section_second {
+    display: flex;
+    width: 40%;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_important {
+    max-width: 85%;
+    max-height: 85%;
+    height: auto;
+    margin: auto;
+    display: block;
+    /* Se utiliza display block y margen automatico, asi se logra centrar la imagen en el div*/
+    object-fit: cover;
+    transform: rotate(-4deg);
+    /* Un ligero giro para un efecto polaroid */
+    transition: transform 0.3s ease-in-out;
+}
+
+.img_important:hover {
+    transform: scale(1.05);
+}
+/* BODY ---------------------------------------*/
+
+/* FOOTER ---------------------------------------*/
+footer {
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    color: #c0c0c0;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* FOOTER ---------------------------------------*/
+
+/* BOTONES 2 CON SUBRAYADO---------------------------------------*/
+
+.button_with_underline {
+    flex-grow: 1; /*Indica que el botón debe expandirse para ocupar todo el espacio disponible dentro del contenedor flex (el <a>). */
+    border-radius: 5px;
+    margin: 20px;
+    padding: 0 2em;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.button_with_underline:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+.button_with_underline:before,
+.button_with_underline:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+.button_with_underline:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.button_with_underline:hover:before,
+.button_with_underline:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/* BOTONES 2 CON SUBRAYADO ---------------------------------------*/
+
+
+/* Dark Mode -------------------------------------------------------- */
+
+/*LightMode de Body*/
 .light-mode {
     background-color: #f1f1f1;
     color: #1AAB8A;
 }
 
+/*LightMode de Botones*/
 .light-mode-button {
     background: #141e30;
     color: #fff;
@@ -225,37 +281,35 @@ input[type="checkbox"]:checked::before {
     border: 2px #fff;
     background: #fff;
 }
+/*LightMode de Botones*/
 
+/*LightMode de Spans "Soy Facundo Pepino" "Mis Estudios" "Formulario" */
 .light-mode-span {
     color: #141e30 !important;
 }
 
-.light-mode-h1 {
-    color: #141e30;
-}
-
+/*LightMode de Texto de Footer */
 .light-mode-footer {
     color: #141e30;
 }
 
-.light-mode-article {
-    background-color: #fff !important;
-    color: #141e30 !important;
-}
-
-.light-mode-strong {
-    color: #fff !important;
-}
-
+/*LightMode de Links de Header*/
 .light-mode-a {
     color: #fff !important;
     background-color: #141e30 !important;
 }
 
+/*LightMode de H1 de Header*/
+.light-mode-h1 {
+    color: #141e30;
+}
+
+/*LightMode de CheckBox DarkMode*/
 .light-mode-label-checkitem {
     color: #141e30 !important;
 }
 
+/*LightMode de Formulario en Contacto*/
 .light-mode-section_form{
     background-color: #141e30 !important; 
 }
@@ -267,13 +321,20 @@ input[type="checkbox"]:checked::before {
 
 .light-mode-button_form:hover {
     background-color: #314652 !important; 
-    color: #fff;
+    color: #fff !important;
 }
 
 .light-mode-button_form:before,
 .light-mode-button_form:after {
     border: 2px #fff;
     background: #fff;
+}
+/*LightMode de Formulario en Contacto*/
+
+/*LightMode de los articulos en Acerca de Mi, Proyectos, Estudios */
+.light-mode-article {
+    background-color: #fff !important;
+    color: #141e30 !important;
 }
 
 .light-mode-h2-article{
@@ -288,6 +349,53 @@ input[type="checkbox"]:checked::before {
     color: #141e30 !important;
 }
 
-.light-mode-article_project{
-    background-color: #fff !important;
+/*Lightmode para cubo de Estudios */
+.light-mode-cube-span{
+    background: linear-gradient(to bottom,
+    #141e30 0%,
+    hsl(210, 50%, 20%) 5%,
+    hsl(210, 47%, 25%) 10%,
+    hsl(210, 44%, 30%) 15%,
+    hsl(210, 41%, 35%) 20%,
+    hsl(210, 38%, 40%) 25%,
+    hsl(210, 35%, 45%) 30%,
+    hsl(210, 32%, 50%) 35%,
+    hsl(210, 29%, 55%) 40%,
+    hsl(210, 26%, 60%) 45%,
+    hsl(210, 23%, 65%) 50%,
+    hsl(210, 20%, 70%) 55%,
+    hsl(210, 17%, 75%) 60%,
+    hsl(210, 14%, 80%) 65%,
+    hsl(210, 11%, 85%) 70%,
+    hsl(210, 8%, 88%) 75%,
+    hsl(210, 5%, 91%) 80%,
+    hsl(210, 3%, 94%) 85%,
+    hsl(210, 1%, 97%) 90%,
+    hsl(210, 0%, 100%) 100%) !important;
+}
+
+.light-mode-typewriter{
+    --blue: #141e30 !important;
+    --blue-dark: #141e30 !important;
+}
+
+/*MediaQueries Generales */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 180px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section_first,
+    .section_second {
+        width: 100%;
+    }
 }

@@ -1,23 +1,4 @@
-main{
-    margin: 0px 50px 0px 50px;
-}
-
-.span-form:after {
-    content: "";
-    animation: abomination3 3s ease-out;
-    animation-fill-mode: forwards;
-}
-
-.span-form {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    font-style: normal;
-    color: #fff;
-    margin: 0;
-    display: block;
-}
-
+/* Estilo para span "Escribeme y en breve..." */
 .span-form2 {
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
@@ -27,7 +8,23 @@ main{
     margin: 0;
     display: block;
 }
+/* Estilo para span "Escribeme y en breve..." */
 
+/* Efectos de "Formulario" */
+.span-form {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    display: block;
+}
+.span-form:after {
+    content: "";
+    animation: abomination3 3s ease-out;
+    animation-fill-mode: forwards;
+}
 @keyframes abomination3 {
     0% {
         content: "F";
@@ -75,7 +72,9 @@ main{
 
 
 }
+/* Efectos de "Formulario" */
 
+/* Estilo para segundo section (maquina de escribir)*/
 .section_second {
     display: flex;
     flex-direction: column;
@@ -84,6 +83,7 @@ main{
     min-height: 300px;
 }
 
+/* Estilo para formulario */
 .section_form {
     display: flex;
     flex-direction: column;
@@ -96,7 +96,6 @@ main{
     transition: 0.7s ease;
     /* Para transicion de modo claro a modo oscuro*/
 }
-
 
 textarea {
     font-family: "Titillium Web", sans-serif;
@@ -126,8 +125,7 @@ form textarea:focus {
 
 form label {
     color: #fff;
-    width: 100px;
-    /* Ancho fijo para los labels */
+    width: 100px; /* Ancho fijo para los labels */
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -136,7 +134,7 @@ form label {
 textarea {
     padding: 10px;
     width: 95%;
-    height: 90px;
+    height: 80px;
     border-radius: 5px;
     border-style: solid;
     border-width: 3px;
@@ -145,60 +143,7 @@ textarea {
     transition: 0.7s ease;
 }
 
-button {
-    padding: 10px;
-    font-family: "Titillium Web", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    height: 60px;
-    margin: 20px;
-    padding: 0 2em;
-    background-color: #141e30;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    width: 50%;
-    cursor: pointer;
-    box-sizing: content-box;
-    transition: 800ms ease all;
-    outline: none;
-    position: relative;
-
-    flex-grow: 1;
-    /*Indica que el botón debe expandirse para ocupar todo el espacio disponible dentro del contenedor flex (el <a>). */
-}
-
-button:hover {
-    background: #fff;
-    color: #1AAB8A;
-}
-
-button:before,
-button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 3px;
-    width: 0;
-    background: #141e30;
-    transition: 400ms ease all;
-}
-
-button:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
-button:hover:before,
-button:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
-}
-
-
+/* Estilo para lograr que nombre y apellido esten alineados*/
 .div_firstname_surname {
     width: 100%;
     gap: 20px;
@@ -208,37 +153,27 @@ button:hover:after {
     align-items: center;
 }
 
-.field-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    /* Asegura que cada grupo de campo ocupe el 100% del contenedor */
+/* Estilo especifico para boton de formulario*/
+.button_contact {
+    font-size: 30px;
+    padding: 0 2em;
+    background-color: #141e30;
+    color: #fff;
+    border: none;
+    width: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
 }
+
+/* Estilo para formulario */
 
 
 /* MediaQueries Para Contact*/
-
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 180px;
         margin-top: 100px;
         margin-bottom: 100px;
-    }
-
-
-    main {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .section_first,
-    .section_second {
-        width: 100%;
     }
 
     .div_firstname_surname {
@@ -250,10 +185,6 @@ button:hover:after {
 
 }
 
-.light-mode-typewriter{
-    --blue: #141e30 !important;
-    --blue-dark: #141e30 !important;
-}
 
 /* Maquina de escribir */
 .typewriter {
@@ -513,3 +444,4 @@ button:hover:after {
         box-shadow: 15px 0 0 var(--key), 30px 0 0 var(--key), 45px 0 0 var(--key), 60px 0 0 var(--key), 75px 0 0 var(--key), 90px 0 0 var(--key), 22px 10px 0 var(--key), 37px 12px 0 var(--key), 52px 10px 0 var(--key), 60px 10px 0 var(--key), 68px 10px 0 var(--key), 83px 10px 0 var(--key);
     }
 }
+/* Maquina de escribir */

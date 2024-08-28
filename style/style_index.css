@@ -17,7 +17,6 @@
     margin: 0;
     display: block;
 }
-
 .span-showname:after {
     content: "";
     animation: abomination1 10s linear 1;
@@ -106,94 +105,17 @@
     }
 }
 
-/*Botones*/
+/*Nav a otras paginas*/
 .first_page_nav {
     display: flex;
     flex-direction: column;
 }
-
 .first_page_nav a {
     text-decoration: none;
     display: flex;
     /*  Esto hace que los elementos hijos (en este caso, los botones) se dispongan dentro del <a> usando las propiedades de flexbox. */
 }
-
-button {
-    flex-grow: 1;
-    /*Indica que el botón debe expandirse para ocupar todo el espacio disponible dentro del contenedor flex (el <a>). */
-
-    border-radius: 5px;
-    margin: 20px;
-    padding: 0 2em;
-    background: #1AAB8A;
-    color: #fff;
-    border: none;
-    position: relative;
-    height: 60px;
-    font-size: 1.6em;
-
-    cursor: pointer;
-    transition: 800ms ease all;
-    outline: none;
-
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-}
-
-button:hover {
-    background: #fff;
-    color: #1AAB8A;
-}
-
-button:before,
-button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: #1AAB8A;
-    transition: 400ms ease all;
-}
-
-button:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
-button:hover:before,
-button:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
-}
-
-
-/* MediaQueries Para Index*/
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 180px;
-    }
-
-    main {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .section_first,
-    .section_second {
-        width: 100%;
-    }
-}
+/*Nav a otras paginas*/
 
 /* CUBO RUBIK */
 

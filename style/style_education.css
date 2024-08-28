@@ -1,7 +1,4 @@
-main{
-    margin: 0px 50px 0px 50px;
-}
-
+/* Efectos de "Mis Estudios" */
 .span-mystudies:after {
     content: "";
     animation: abomination2 3s ease-out;
@@ -67,7 +64,9 @@ main{
         content: "Mis Estudios";
     }
 }
+/* Efectos de "Mis Estudios" */
 
+/* Estilos para titulos y parrafos de cada article que representa un curso */
 .h2-course {
     font-family: "Titillium Web", sans-serif;
     font-weight: 500;
@@ -103,56 +102,26 @@ article:hover {
     transform: translateY(-5px);
 }
 
-.span-item-course {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: #fff;
-}
-
-.section_second {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Estilos para titulos y parrafos de cada article que representa un curso */
 
 /* MediaQueries Para Education*/
 
 @media (max-width: 950px) {
 
     header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 180px;
         margin-top: 100px;
         margin-bottom: 100px;
     }
 
-    .h1-title {
-        width: fit-content;
-    }
-
-
-    main {
-        flex-direction: column;
-        height: auto;
-    }
-
     .section_first,
     .section_second {
-        width: 100%;
         min-height: 350PX;
     }
 
 }
 
 
-
-
-/* CUBO 3D*/
+/* CUBO 3D */
 .cube-loader {
     scale: 3;
     position: relative;
@@ -237,28 +206,6 @@ article:hover {
         0 0 30px #323232,
         0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
 }
+/* CUBO 3D */
 
-.light-mode-cube-span{
-    background: linear-gradient(to bottom,
-    #141e30 0%,
-    hsl(210, 50%, 20%) 5%,
-    hsl(210, 47%, 25%) 10%,
-    hsl(210, 44%, 30%) 15%,
-    hsl(210, 41%, 35%) 20%,
-    hsl(210, 38%, 40%) 25%,
-    hsl(210, 35%, 45%) 30%,
-    hsl(210, 32%, 50%) 35%,
-    hsl(210, 29%, 55%) 40%,
-    hsl(210, 26%, 60%) 45%,
-    hsl(210, 23%, 65%) 50%,
-    hsl(210, 20%, 70%) 55%,
-    hsl(210, 17%, 75%) 60%,
-    hsl(210, 14%, 80%) 65%,
-    hsl(210, 11%, 85%) 70%,
-    hsl(210, 8%, 88%) 75%,
-    hsl(210, 5%, 91%) 80%,
-    hsl(210, 3%, 94%) 85%,
-    hsl(210, 1%, 97%) 90%,
-    hsl(210, 0%, 100%) 100%) !important;
-}
     

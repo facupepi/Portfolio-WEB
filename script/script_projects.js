@@ -51,7 +51,7 @@ function enableDarkMode_proyectos() {
 
     let articles = document.querySelectorAll(".article_project");
     for (i = 0; i < articles.length; i++) {
-        articles[i].classList.toggle("light-mode-article_project");
+        articles[i].classList.toggle("light-mode-article");
     }
 
     let articles_h2 = document.querySelectorAll("h2");

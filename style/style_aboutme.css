@@ -1,3 +1,4 @@
+/* Estilo para main de AboutMe */
 main {
     display: grid;
     grid-template-areas:
@@ -7,7 +8,9 @@ main {
     margin: 40px;
     grid-template-columns: 1fr 1fr 1fr; /* Distribuye el ancho de forma equitativa */
 }
+/* Estilo para main de AboutMe */
 
+/* Estilo GENERAL para cada section de la grilla */
 .section_card {
     text-align: left;
     display: flex;
@@ -19,37 +22,24 @@ main {
     transition: 1s ease;
     width: 100%; /* Hace que cada sección ocupe todo el espacio disponible en su columna */
     height: 100%; /* Asegura que las secciones tengan la misma altura */
-    padding: 5px;
+    padding: 4px;
 }
-
 .section_card:hover {
     transition: transform 0.2s ease-in-out;
     background-color: #273454;
     transform: translateY(-5px);
 }
 
-.section_skills {
-    grid-area: section_skills;
-}
+/* Estilo para section de habilidades */
+.section_skills { grid-area: section_skills; }
 
-.section_languages {
-    grid-area: section_languages;
-}
+/* Estilo para section de lenguajes */
+.section_languages { grid-area: section_languages; }
 
-.section_photo {
-    text-align: center;
-    align-content: center;
-    grid-area: section_photo;
-}
+/* Estilo para section de experiencia */
+.section_experience{ grid-area: section_experience; }
 
-.section_experience{
-    grid-area: section_experience;
-}
-
-.section_information{
-    grid-area: section_information;
-}
-
+/* Estilo para article de experiencia */
 .article-experience{
     display: flex;
     flex-direction: row;
@@ -57,36 +47,53 @@ main {
     justify-content: center;
 }
 
+/* Estilo para section de información */
+.section_information{ grid-area: section_information; }
+
+/* Seccion para descargar CV*/
 .section_cv{
     grid-area: section_cv;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.button_with_underline{
+    font-size: 25px;
+}
 
+/* Logo SAP */
 #img-sap{
     max-width: 100px;
     max-height: 100px;
     margin-left: 50px;
 }
 
-/* Imagen dentro de la sección de habilidades 
-.skills_photo {
-    object-fit: contain;
-    max-height: 300px;
-    max-width: 300px;
-    border-radius: 10px; } /* Redondeado leve en las esquinas */
-
-/* Imagen personal */
+/* Estilos para section de foto*/
+.section_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .personal_photo {
     object-fit: contain;
     max-height: 300px; /* Altura máxima definida para mantener la proporción */
     max-width: 300px; /* Ancho máximo definido */
     border-radius: 50%; /* Transformando en imagen circular */
+    border: 5px solid #e0e0e0; /* Borde sutil */
+    width: 75%; /* Ajusta el tamaño */
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    filter: grayscale(100%) blur(2px); /* Blanco y negro con desenfoque */
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+.personal_photo:hover {
+    filter: grayscale(0%) blur(0); /* Elimina el desenfoque y aplica color al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5); /* Aumenta la sombra con resplandor */
 }
 
-/* Títulos */
+/* Títulos y parrafos de los section*/
 h2 {
     margin: 0;
     text-align: center;
@@ -117,71 +124,22 @@ p {
     margin: 10px 0; 
     text-align: center;
 }
+/* Títulos y parrafos de los section*/
 
+/* Estilos para cada subpunto de habilidaes, lenguajes e informacion personal*/
 .skill, .language {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-
 .skill i, .language i {
     font-size: 20px;
     color: #1AAB8A;
     margin-right: 10px;
 }
+/* Estilos para cada subpunto de habilidaes, lenguajes e informacion personal*/
 
-
-button {
-    border-radius: 5px;
-    padding: 0 2em;
-    background: #1AAB8A;
-    color: #fff;
-    border: none;
-    position: relative;
-    height: 60px;
-    font-size: 1.6em;
-
-    cursor: pointer;
-    transition: 800ms ease all;
-    outline: none;
-
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-}
-
-button:hover {
-    background: #fff;
-    color: #1AAB8A;
-}
-
-button:before,
-button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: #1AAB8A;
-    transition: 400ms ease all;
-}
-
-button:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
-button:hover:before,
-button:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
-}
-
-
+/*MediaQueries para AboutMe*/
 @media (max-width: 900px) {
 
     main .section_card:first-child{
@@ -192,6 +150,7 @@ button:hover:after {
         flex-direction: column;
         align-items: center;
         min-height: 180px;
+        margin-top: 100px;
     }
 
     main {
