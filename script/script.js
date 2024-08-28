@@ -5,19 +5,19 @@ window.onload = function () {
     var LocationActual = window.location.pathname;
     console.log(LocationActual);
     console.log(mode_light);
-    if (localStorage.getItem("mode") == "true" && LocationActual == "/projects.html") {
+    if (localStorage.getItem("mode") == true && LocationActual == "/projects.html") {
         document.getElementById("checkitem").checked = true;
         enableDarkMode_proyectos();
-    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/index.html") {
+    } else if (localStorage.getItem("mode") == true && LocationActual == "/index.html") {
         document.getElementById("checkitem").checked = true;
         enableDarkMode();
-    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/education.html") {
+    } else if (localStorage.getItem("mode") == true && LocationActual == "/education.html") {
         document.getElementById("checkitem").checked = true;
         enableDarkMode_education();
-    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/contact.html") {
+    } else if (localStorage.getItem("mode") == true && LocationActual == "/contact.html") {
         document.getElementById("checkitem").checked = true;
         enableDarkMode_contact();
-    } else if (localStorage.getItem("mode") == "true" && LocationActual == "/aboutme.html") {
+    } else if (localStorage.getItem("mode") == true && LocationActual == "/aboutme.html") {
         document.getElementById("checkitem").checked = true;
         enableDarkMode_aboutme();
     } else if (localStorage.getItem("mode") == null) {
