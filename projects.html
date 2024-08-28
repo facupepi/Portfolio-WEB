@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de Facundo Pepino">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,19 +28,19 @@
             <h1 class="h1-title">PROYECTOS.</h1>
             <div class="div_checkitem">
                 <label for="checkitem" aria-label="mode_dark_light" class="fa-regular fa-lightbulb"></label>
-                <input id="checkitem" type="checkbox" onclick="enableDarkMode_proyectos()">
+                <input id="checkitem" aria-label="mode_dark_light" type="checkbox" onclick="enableDarkMode_proyectos()">
             </div>
         </div>
 
         <nav class="other_pages_nav">
-            <a href="education.html" class="fa fa-arrow-left"></a>
-            <a href="aboutme.html" class="fa fa-arrow-right"></a>
+            <a tabindex="-1" href="education.html" class="fa fa-arrow-left"></a>
+            <a tabindex="-1" href="aboutme.html" class="fa fa-arrow-right"></a>
         </nav>
 
         <section class="social_media">
-            <a target="_blank" aria-label="Mail" href="mailto:facujoel2018@gmail.com" class="fa fa-envelope"></a>
-            <a target="_blank" aria-label="Instagram" href="https://www.instagram.com/facuu_pepino/" class="fa fa-instagram"></a>
-            <a target="_blank" aria-label="Linkedin" href="https://www.linkedin.com/in/facundo-pepino/" class="fa fa-linkedin"></a>
+            <a target="_blank" tabindex="-1" aria-label="Mail" href="mailto:facujoel2018@gmail.com" class="fa fa-envelope"></a>
+            <a target="_blank" tabindex="-1" aria-label="Instagram" href="https://www.instagram.com/facuu_pepino/" class="fa fa-instagram"></a>
+            <a target="_blank" tabindex="-1" aria-label="Linkedin" href="https://www.linkedin.com/in/facundo-pepino/" class="fa fa-linkedin"></a>
         </section>
     </header>
 
@@ -48,7 +49,7 @@
         <section class="section_main_projects">
             <article class="article_project">
                 <h2>APP Lista de Tareas</h2>
-                <img src="./img/lista_de_tareas.png" class="article_img">
+                <img alt="Imagen de una lista de Tareas" src="./img/lista_de_tareas.png" class="article_img">
                 <p>Aplicación web utilizando <strong>React JS</strong> enfocada en la gestión de una lista de tareas. Consiste en un sistema interactivo que permita a los usuarios añadir tareas y marcarlas como completadas o eliminarlas.</p>
                 
                 <a target="_blank" href="https://github.com/facupepi/APP-REACT---Lista-de-Tareas---Argentina-Programa-4.0/tree/main?tab=readme-ov-file">
@@ -58,7 +59,7 @@
 
             <article class="article_project">
                 <h2>APP Gestion de Libros</h2>
-                <img src="./img/libros.png" class="article_img">
+                <img alt="Imagen de Libros" src="./img/libros.png" class="article_img">
                 <p>Aplicacion de escritorio desarrollada en <strong>C#</strong> e implementado <strong>SQL</strong> que permite realizar un seguimiento detallado de los libros, autores e editoriales, incluyendo su registro, consulta, actualización y eliminación. </p>
                 <a target="_blank" href="https://github.com/facupepi/APP-Gestion-De-Libros">
                     <button class="button_with_underline">Ir a GitHub <i class="fa-brands fa-github"></i> </button>
@@ -70,7 +71,7 @@
 
     <footer>©2024 Derechos Reservados</footer>
 
-    <script src="script/script_projects.js"></script>
+    <script src="script/script.js"></script>
 
 </body>
 
