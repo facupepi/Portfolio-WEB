@@ -199,3 +199,12 @@
         transform: rotateX(360deg) rotateY(360deg);
     }
 }
+
+@media (max-width: 950px) {
+
+    header {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+}
